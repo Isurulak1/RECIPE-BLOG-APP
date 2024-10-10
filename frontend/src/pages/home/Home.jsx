@@ -1,8 +1,15 @@
 import React from 'react'
+import Hero from '../../components/Hero'
+import CategoryWrapper from '../categoy/CategoryWrapper'
 
 const Home = () => {
   return (
-    <div>Home</div>
+    <div className='container mx-auto'>
+      <div className='flex flex-col justify-center items-center w-full py-20'>
+        <Hero />
+        <CategoryWrapper />
+      </div>
+    </div>
   )
 }
 
