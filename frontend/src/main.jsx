@@ -6,6 +6,7 @@ import App from './App.jsx'
 import './index.css'
 import Home from './pages/home/Home.jsx'
 import ErrorPage from './components/ErrorPage.jsx';
+import CategoryPage from './pages/categoy/CategoryPage.jsx';
 
 
 
@@ -18,6 +19,10 @@ const router = createBrowserRouter([
       {
         path: "/",
         element: <Home />,
+      },
+      {
+        path: "/categories/:category",
+        element: <CategoryPage/>
       }
     ]
   },
