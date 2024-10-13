@@ -1,8 +1,11 @@
 const express = require('express')
 const mongoose = require('mongoose');
-const app = express()
+const app = express();
+const cors = require('cors');
 const port = process.env.PORT || 5000;
 
+app.use(express.json());
+app.use(cors());
 
 
 async function main() {
@@ -15,6 +18,11 @@ async function main() {
 
 
 main().then(() => console.log("Mongodb COnnected Succesfully!")).catch(err => console.log(err));
+
+//routes
+const itemRoutes = require('./src/routes/itemRoute');
+
+app.use('/api', itemRoutes);
 
 
 
