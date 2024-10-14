@@ -7,6 +7,7 @@ import './index.css'
 import Home from './pages/home/Home.jsx'
 import ErrorPage from './components/ErrorPage.jsx';
 import CategoryPage from './pages/categoy/CategoryPage.jsx';
+import Search from './pages/Search.jsx';
 
 
 
@@ -23,6 +24,10 @@ const router = createBrowserRouter([
       {
         path: "/categories/:category",
         element: <CategoryPage/>
+      },
+      {
+        path: "/search",
+        element: <Search />
       }
     ]
   },
