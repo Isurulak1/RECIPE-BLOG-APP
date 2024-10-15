@@ -20,9 +20,11 @@ async function main() {
 main().then(() => console.log("Mongodb COnnected Succesfully!")).catch(err => console.log(err));
 
 //routes
-const itemRoutes = require('./src/routes/itemRoute');
+const ItemRoutes = require('./src/routes/itemRoute');
+const CategoryRoutes = require('./src/routes/categoryRoute');
 
-app.use('/api', itemRoutes);
+app.use('/api', ItemRoutes);
+app.use('/api', CategoryRoutes);
 
 
 
