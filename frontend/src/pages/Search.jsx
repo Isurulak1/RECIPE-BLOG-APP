@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import { LuSearch } from "react-icons/lu";
 import { useParams } from "react-router-dom";
 import axios from "axios";
+import Card from "../components/Card";
 
 const Search = () => {
 
@@ -58,10 +59,10 @@ const Search = () => {
           />
       </div>
 
-      <ul>
+      <ul className="mt-20 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8">
         {
           results && results.map((item) => (
-            <li key={item._id}>{item.name}</li>
+            <Card key={item._id}>{item.name}</Card>
           ))
         }
       </ul>
