@@ -13,9 +13,9 @@ const getCategory = async (req, res) => {
 
         const items = await Item.find({ menuId: categoryData.menuId});
 
-        console.log(items);
+        // console.log(items);
 
-           res.status(200).json(items);
+        res.status(200).json(items);
 
 
     } catch (error) {
