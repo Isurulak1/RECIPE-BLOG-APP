@@ -4,6 +4,7 @@ import CategoryWrapper from '../categoy/CategoryWrapper'
 import FeaturedSection from './FeaturedSection'
 import LatestRecipe from './LatestRecipe'
 import NewsLetter from './NewsLetter'
+import AboutSection from './AboutSection'
 
 const Home = () => {
   return (
@@ -18,6 +19,7 @@ const Home = () => {
       <FeaturedSection />
       <LatestRecipe />
       <NewsLetter />
+      <AboutSection />
     </div>
   )
 }
