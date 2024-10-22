@@ -2,12 +2,16 @@ import React from 'react'
 import { Outlet } from 'react-router-dom'
 import Header from './components/header/Header'
 import './App.css'
+import Footer from './components/Footer'
 
 const App = () => {
   return (
     <div className='max-w-screen-2xl mx-auto'>
       <Header />
-    <Outlet />
+      <div className='min-h-[calc(100vh-136px)]'>
+        <Outlet />
+      </div>
+      <Footer />
     </div>
   )
 }
