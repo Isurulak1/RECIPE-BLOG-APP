@@ -9,6 +9,7 @@ import ErrorPage from './components/ErrorPage.jsx';
 import CategoryPage from './pages/categoy/CategoryPage.jsx';
 import Search from './pages/Search.jsx';
 import SingleProducts from './pages/products/SingleProducts.jsx';
+import Recipes from './pages/products/Recipes.jsx';
 
 
 
@@ -33,6 +34,9 @@ const router = createBrowserRouter([
         path: "/items/:id",
         element: <SingleProducts />,
         loader: ({params}) => fetch(`http://localhost:5000/api/items/${params.id}`)
+      },{
+        path: "/recipes",
+        element: <Recipes />
       }
     ]
   },
