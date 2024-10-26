@@ -12,6 +12,7 @@ import SingleProducts from './pages/products/SingleProducts.jsx';
 import Recipes from './pages/products/Recipes.jsx';
 import Resources from './pages/resources/Resources.jsx';
 import About from './pages/about/About.jsx';
+import Contact from './pages/contact/Contact.jsx';
 
 
 
@@ -45,6 +46,9 @@ const router = createBrowserRouter([
       },{
         path: "/about",  
         element: <About />
+      },{
+        path: "/contact",
+        element: <Contact />
       }
     ]
   },
