@@ -11,9 +11,6 @@ app.use(cors());
 async function main() {
   await mongoose.connect('mongodb+srv://onlinejobs0417:YFxeucKYclPlHLqz@veggify-react-app.q7q4k.mongodb.net/veggify-react-app?retryWrites=true&w=majority&appName=veggify-react-app');
 
-  app.get('/', (req, res) => {
-    res.send('App serve is running')
-  })
 }
 
 
@@ -26,6 +23,10 @@ const CategoryRoutes = require('./src/routes/categoryRoute');
 app.use('/api', ItemRoutes);
 app.use('/api', CategoryRoutes);
 
+
+app.get('/', (req, res) => {
+  res.send('App serve is running')
+})
 
 
 app.listen(port, () => {
