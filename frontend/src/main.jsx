@@ -36,7 +36,7 @@ const router = createBrowserRouter([
       },{
         path: "/items/:id",
         element: <SingleProducts />,
-        loader: ({params}) => fetch(`http://localhost:5000/api/items/${params.id}`)
+        loader: ({params}) => fetch(`https://recipe-blog-app-nz2i.vercel.app/api/items/${params.id}`)
       },{
         path: "/recipes",
         element: <Recipes />

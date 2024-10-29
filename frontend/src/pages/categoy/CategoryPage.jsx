@@ -16,7 +16,7 @@ const CategoryPage = () => {
       setLoading(true); 
 
       try {
-        const response = await axios.get(`http://localhost:5000/api/categories/${category}`);
+        const response = await axios.get(`https://recipe-blog-app-nz2i.vercel.app/api/categories/${category}`);
         setItems(response.data);
         
       } catch (error) {

@@ -26,7 +26,7 @@ const Search = () => {
       setLoading(true);
 
       try {
-        const response = await axios.get('http://localhost:5000/api/items', {
+        const response = await axios.get('https://recipe-blog-app-nz2i.vercel.app/api/items', {
           params: {q: query}
         });
         setResults(response.data);

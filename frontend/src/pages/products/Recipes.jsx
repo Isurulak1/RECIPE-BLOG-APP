@@ -9,7 +9,7 @@ const Recipes = () => {
 
     useEffect(() => {
         const getLatestItems = async () => {
-            const response = await axios.get('http://localhost:5000/api/all-items');
+            const response = await axios.get('https://recipe-blog-app-nz2i.vercel.app/api/all-items');
             setItems(response.data);
         }
         getLatestItems();
